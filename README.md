@@ -19,7 +19,7 @@ pip install -r requirement.txt
 ```
 ### Step 1: Prepare your dataset
 * Put the noisy 3D image stack in Data folder (at least 16 z/t is required).
-* Here we prepared a noisy image of mouse brain in Data folder. Image size: 100(z) 256(y) 256(x).
+* Here we prepared a noisy image of mouse brain in Data folder. Image size: 81(z) 256(y) 256(x).
   
 ### Step 2: Choose proper parameters for denoising in option.py
 * Change the datapath where you strore your data.
