@@ -4,6 +4,7 @@ A universal self-supervised denoiser for fluorescence optical microscopy imaging
 ## Paper:
 The paper is under reviewed, arxiv preprint is availabled at: 
 
+![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
 
 ## Introduction:
 This repository includes all python codes for denosing task. An ImageJ/Fiji plugin is provided for convience.
