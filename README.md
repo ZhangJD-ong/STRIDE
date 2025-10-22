@@ -38,7 +38,7 @@ The results will be saved at ./checkpoints/task_name/results
 ```
 python test.py
 ```
-![image](https://github.com/ZhangJD-ong/AI-assistant-for-breast-tumor-segmentation/blob/main/Img/Framework.png)
+![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Brain_results.png)
 
 ## ImageJ/Fiji plugin: STRIDE
 
