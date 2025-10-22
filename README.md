@@ -1,8 +1,6 @@
 # STRIDE
 A universal self-supervised denoiser for fluorescence optical microscopy imaging
 
-# AI-assistant-for-breast-tumor-segmentation
-
 ## Paper:
 The paper is under reviewed, arxiv preprint is availabled at: 
 
