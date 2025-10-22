@@ -39,26 +39,10 @@ The results will be saved at ./checkpoints/task_name/results
 python test.py
 ```
 
+## ImageJ/Fiji plugin: STRIDE
 
 
 
-
-### Training and testing
-* For training the segmentation model, please add data path and adjust model parameters in the file: ./Train-and-test-code/options/BasicOptions.py. 
-```
-cd ./Train-and-test-code
-python train.py
-python test.py
-```
-### Inference on own data
-* Please put the new data in the fold: ./Inference-code/Data/Original_data. The segmentation results can be find in ./Inference-code/Results/Tumor/.
-```
-cd ./Inference-code
-python test.py
-```
-* We release the well-trained model (Can be downloaded from https://drive.google.com/drive/folders/1Sos8NK4zzkT1L96saffsg4EpUyjwRSjm?usp=sharing , due to the memory limitation in Github) and five samples to guide usage. Please put the download 'Trained_model' folder in ./Inference-code/.
-* The data can only be used for academic research usage.
-* More data are available at https://doi.org/10.5281/zenodo.8068383.
 
 ## Citation
 If you find the code or data useful, please consider citing the following papers:
