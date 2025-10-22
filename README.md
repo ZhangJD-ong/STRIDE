@@ -15,7 +15,7 @@ This repository includes all python codes for denosing task. An ImageJ/Fiji plug
 Clone and repo and install required packages:
 ```
 git clone git@github.com:ZhangJD-ong/STRIDE.git
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 ### Step 1: Prepare your dataset
 * Put the noisy 3D image stack in Data folder (at least 16 z/t is required).
