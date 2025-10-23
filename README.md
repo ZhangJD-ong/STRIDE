@@ -44,6 +44,28 @@ python test.py
 
 ## 🛠️ ImageJ/Fiji plugin: STRIDE
 
+### Install required python packages:
+* This plugin still works based on Pytorch enviroment, all required packages need to be installed first.
+```
+pip install -r requirements.txt
+```
+### Install ImageJ/Fiji:
+* You can download the ImageJ/Fiji via [mageJ/Fiji](https://imagej.net/software/fiji/downloads)
+
+### Deploy denoising plugin (STRIDE)
+*  Download the STRIDE plugin package from this repository (Plugin folder).
+*  Find the location where you install your ImageJ/Fiji, put the STRIDE folder in plugins folder. (./fiji-win64/Fiji.app/plugins)
+*  Restart Imagej/Fiji
+
+### Test if you install the STRIDE sucessfully
+- In the plugins menu, see if you have 
+
+
+
+
+
+
+
 
 ## 📚 Acknowledgements
 
