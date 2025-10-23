@@ -45,32 +45,34 @@ python test.py
 ```
 ![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Brain_results.png)
 
-## 🛠️ ImageJ/Fiji plugin: STRIDE
+## 🛠️ ImageJ/Fiji Plugin: STRIDE
 
-### Install required python packages:
-This plugin still works based on Pytorch enviroment, all required packages need to be installed first.
+### Install Required Python Packages
+The plugin requires a PyTorch environment with all necessary packages:
 ```
 pip install -r requirements.txt
 ```
-### Install ImageJ/Fiji:
-You can download the ImageJ/Fiji via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads)
+### Install ImageJ/Fiji
+Download ImageJ/Fiji from the [official website](https://imagej.net/software/fiji/downloads)
 
-### Deploy denoising plugin (STRIDE)
-*  Download the STRIDE plugin package from this repository (Plugin folder).
-*  Find the location where you install your ImageJ/Fiji, put the STRIDE folder in plugins folder. (./fiji-win64/Fiji.app/plugins)
-*  Restart Imagej/Fiji
+### Deploy the STRIDE Plugin
+*  Download the STRIDE plugin package from the Plugin folder in this repository
+*  Copy the STRIDE folder to your ImageJ/Fiji plugins directory (./fiji-win64/Fiji.app/plugins)
+*  Restart ImageJ/Fiji
 
-### Test if you install the STRIDE sucessfully
-* In the plugins menu, see if you have STRIDE option.
-* Open a 3D image stack in ImageJ, and click the STRIDE plugin.
-* Choose epoch = 1, iter_num = 1, t = 16 and start denosing. If you don't get any results within 1 hour, you may fail to install STRIDE.
+### Verify Installation
+* Check the plugins menu for the STRIDE option
+* Open a 3D image stack in ImageJ and launch the STRIDE plugin
+* Set epoch = 1, iter_num = 1, t = 16 and start denoising
+* If no results appear within 1 hour, the installation may have failed
 
-### STRIDE usage:
-Once the plugin is successfully installed, congratulations — you're ready to use it! Just follow the steps below:
-* Open the noisy image in ImageJ. Remenber only one image everytime.
-* Click STRIDE in plugins menu, choose proper paramters. You can also use the default settings.
-* Wait about 1-5 hours, depending on your data size and GPUs.
-* All denoised images will be displed in the screen after denosing. Remenber save them before closing them.
+
+### Using STRIDE
+Once successfully installed:
+* Open a single noisy image in ImageJ
+* Click STRIDE in the plugins menu and configure parameters (default settings are available)
+* Processing typically takes 1-5 hours, depending on data size and GPU capability
+* Denoised images will display automatically - remember to save them before closing
 
 
 ## 📚 Acknowledgements
@@ -84,12 +86,8 @@ I would like to thank the following developers and projects whose work I have us
 Thanks to all contributors of the above projects for their excellent work!
 
 ## 📖 Citation
-If you find the code or data useful, please consider citing the following papers:
-
-* Zhang et al., A robust and efficient AI assistant for breast tumor segmentation from DCE-MRI via a spatial-temporal framework, Patterns (2023), https://doi.org/10.1016/j.patter.2023.100826
-* Zhang et al., Recent advancements in artificial intelligence for breast cancer: Image augmentation, segmentation, diagnosis, and prognosis approaches, Seminars in Cancer Biology (2023), https://doi.org/10.1016/j.semcancer.2023.09.001
-
-
+If you find the code or data useful, please consider citing the following paper:
+Zhang et al., 
 
 
 
