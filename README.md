@@ -1,17 +1,17 @@
 # STRIDE
 A universal self-supervised denoiser for fluorescence optical microscopy imaging.
 
-## Paper:
+## 📄 Paper:
 The paper is under reviewed, arxiv preprint is availabled at: 
 
 
 
-## Introduction:
+## 📘 Introduction:
 This repository includes all python codes for denosing task. An ImageJ/Fiji plugin is provided for convience.
 ![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
 
 
-## Setup
+## 💻 Setup
 
 ### Installation
 Clone and repo and install required packages:
@@ -42,10 +42,9 @@ python test.py
 ```
 ![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Brain_results.png)
 
-## ImageJ/Fiji plugin: STRIDE
+## 🛠️ ImageJ/Fiji plugin: STRIDE
 
 
-## Acknowledgement
 ## 📚 Acknowledgements
 
 I would like to thank the following developers and projects whose work I have used or been inspired by:
@@ -56,7 +55,7 @@ I would like to thank the following developers and projects whose work I have us
 
 Thanks to all contributors of the above projects for their excellent work!
 
-## Citation
+## 📖 Citation
 If you find the code or data useful, please consider citing the following papers:
 
 * Zhang et al., A robust and efficient AI assistant for breast tumor segmentation from DCE-MRI via a spatial-temporal framework, Patterns (2023), https://doi.org/10.1016/j.patter.2023.100826
