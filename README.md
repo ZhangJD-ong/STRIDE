@@ -2,41 +2,44 @@
 A universal self-supervised denoiser for fluorescence optical microscopy imaging.
 
 ## 📄 Paper:
-The paper is under reviewed, arxiv preprint is availabled at: 
+The paper is under review. An arXiv preprint is available at:
 
 
 
 ## 📘 Introduction:
-This repository includes all python codes for denosing task. An ImageJ/Fiji plugin is provided for convience.
+This repository contains all Python code for denoising tasks. An ImageJ/Fiji plugin is provided for convenience.
 ![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
 
 
 ## 💻 Setup
 
 ### Installation
-Clone and repo and install required packages:
+Clone the repository and install required packages:
 ```
 git clone git@github.com:ZhangJD-ong/STRIDE.git
+cd STRIDE
 pip install -r requirements.txt
 ```
-### Step 1: Prepare your dataset
-* Put the noisy 3D image stack in Data folder (at least 16 z/t is required).
-* Here we prepared a noisy image of mouse brain in Data folder. Image size: 81(z) 256(y) 256(x).
+### Step 1: Prepare Your Dataset
+* Place your noisy 3D image stack in the Data folder (at least 16 z/t frames are required)
+* We've provided a sample noisy image of a mouse brain in the Data folder (Image size: 81(z) × 256(y) × 256(x))
   
-### Step 2: Choose proper parameters for denoising in option.py
-* Change the datapath where you strore your data.
-* Change image_type. xyt for structural image and xyt for functional image.
-* Change task_name to save well-trained models, denosing results for each task.
+### Step 2: Configure Denoising Parameters
+Edit option.py to set appropriate parameters:
+* Update datapath to point to your data location
+* Set image_type to xyzt for structural images or xyt for functional images
+* Specify task_name to organize trained models and results
   
-### Step 3: Jointly train and inference
-You can directly train the model and inference data by using:
+### Step 3: Train and Inference
+Run the following command to train the model and perform inference:
 ```
 python main.py
 ```
-The results will be saved at ./checkpoints/task_name/results
+Results will be saved at ./checkpoints/task_name/results
 
-### Step 4: Inference with well-trained model (optional)
-Sometimes you want to use well-trained model on other data, you can achieeve it by replacing the old data with new data in Data folder, and running:
+### Step 4: Inference with Pre-trained Model (Optional)
+* Replace the old data with new data in the Data folder
+* Run
 ```
 python test.py
 ```
