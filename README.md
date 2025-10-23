@@ -49,8 +49,8 @@ python test.py
 
 I would like to thank the following developers and projects whose work I have used or been inspired by:
 
-- [Bootstrap](https://github.com/twbs/bootstrap) – Used for dataloader process.
-- [Moment.js](https://github.com/moment/moment/) – Used for whole denosing framework.
+- [SRDTrans](https://github.com/cabooster/SRDTrans) – Used for dataloader process.
+- [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) – Used for whole denosing framework.
 
 
 Thanks to all contributors of the above projects for their excellent work!
