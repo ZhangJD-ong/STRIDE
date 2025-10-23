@@ -29,14 +29,14 @@ pip install -r requirements.txt
 * Change task_name to save well-trained models, denosing results for each task.
   
 ### Step 3: Jointly train and inference
-* You can directly train the model and inference data by using:
+You can directly train the model and inference data by using:
 ```
 python main.py
 ```
 The results will be saved at ./checkpoints/task_name/results
 
 ### Step 4: Inference with well-trained model (optional)
-* Sometimes you want to use well-trained model on other data, you can achieeve it by replacing the old data with new data in Data folder, and running:
+Sometimes you want to use well-trained model on other data, you can achieeve it by replacing the old data with new data in Data folder, and running:
 ```
 python test.py
 ```
@@ -45,12 +45,12 @@ python test.py
 ## 🛠️ ImageJ/Fiji plugin: STRIDE
 
 ### Install required python packages:
-* This plugin still works based on Pytorch enviroment, all required packages need to be installed first.
+This plugin still works based on Pytorch enviroment, all required packages need to be installed first.
 ```
 pip install -r requirements.txt
 ```
 ### Install ImageJ/Fiji:
-* You can download the ImageJ/Fiji via [mageJ/Fiji](https://imagej.net/software/fiji/downloads)
+You can download the ImageJ/Fiji via [mageJ/Fiji](https://imagej.net/software/fiji/downloads)
 
 ### Deploy denoising plugin (STRIDE)
 *  Download the STRIDE plugin package from this repository (Plugin folder).
@@ -58,13 +58,16 @@ pip install -r requirements.txt
 *  Restart Imagej/Fiji
 
 ### Test if you install the STRIDE sucessfully
-- In the plugins menu, see if you have 
+* In the plugins menu, see if you have STRIDE option.
+* Open a 3D image stack in ImageJ, and click the STRIDE plugin.
+* Choose epoch = 1, iter_num = 1, t = 16 and start denosing. If you don't get any results within 1 hour, you may fail to install STRIDE.
 
-
-
-
-
-
+### STRIDE usage:
+Once the plugin is successfully installed, congratulations — you're ready to use it! Just follow the steps below:
+* Open the noisy image in ImageJ. Remenber only one image everytime.
+* Click STRIDE in plugins menu, choose proper paramters. You can also use the default settings.
+* Wait about 1-5 hours, depending on your data size and GPUs.
+* All denoised images will be displed in the screen after denosing. Remenber save them before closing them.
 
 
 ## 📚 Acknowledgements
