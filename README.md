@@ -50,7 +50,7 @@ This plugin still works based on Pytorch enviroment, all required packages need 
 pip install -r requirements.txt
 ```
 ### Install ImageJ/Fiji:
-You can download the ImageJ/Fiji via [mageJ/Fiji](https://imagej.net/software/fiji/downloads)
+You can download the ImageJ/Fiji via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads)
 
 ### Deploy denoising plugin (STRIDE)
 *  Download the STRIDE plugin package from this repository (Plugin folder).
