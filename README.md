@@ -4,10 +4,11 @@ A universal self-supervised denoiser for fluorescence optical microscopy imaging
 ## Paper:
 The paper is under reviewed, arxiv preprint is availabled at: 
 
-![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
+
 
 ## Introduction:
 This repository includes all python codes for denosing task. An ImageJ/Fiji plugin is provided for convience.
+![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
 
 
 ## Setup
@@ -44,7 +45,16 @@ python test.py
 ## ImageJ/Fiji plugin: STRIDE
 
 
+## Acknowledgement
+## 📚 Acknowledgements
 
+I would like to thank the following developers and projects whose work I have used or been inspired by:
+
+- [Bootstrap](https://github.com/twbs/bootstrap) – Used for dataloader process.
+- [Moment.js](https://github.com/moment/moment/) – Used for whole denosing framework.
+
+
+Thanks to all contributors of the above projects for their excellent work!
 
 ## Citation
 If you find the code or data useful, please consider citing the following papers:
