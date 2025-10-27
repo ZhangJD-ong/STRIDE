@@ -52,6 +52,7 @@ The plugin requires a PyTorch environment with all necessary packages:
 ```
 pip install -r requirements.txt
 ```
+Attention: Install the packages in the base enviroment!!!
 ### Install ImageJ/Fiji
 Download ImageJ/Fiji from the [official website](https://imagej.net/software/fiji/downloads)
 
