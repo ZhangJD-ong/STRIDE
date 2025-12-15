@@ -2,7 +2,7 @@
 A universal self-supervised denoiser for fluorescence optical microscopy imaging.
 
 ## 📄 Paper:
-The paper is under review. An arXiv preprint is available at:
+The paper is under review.
 
 
 
