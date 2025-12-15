@@ -1,5 +1,5 @@
 # STRIDE
-A universal self-supervised denoiser for fluorescence optical microscopy imaging.
+A universal self-supervised denoiser for optical microscopy.
 
 ## 📄 Paper:
 The paper is under review.
@@ -86,9 +86,7 @@ I would like to thank the following developers and projects whose work I have us
 
 Thanks to all contributors of the above projects for their excellent work!
 
-## 📖 Citation
-If you find the code or data useful, please consider citing the following paper:
-Zhang et al., 
+
 
 
 
