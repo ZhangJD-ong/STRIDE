@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ### Step 2: Configure Denoising Parameters
 Edit option.py to set appropriate parameters:
 * Update datapath to point to your data location
-* Set image_type to xyzt for structural images or xyt for functional images
+* Set image_type to  for structural images or xyt for functional images
 * Specify task_name to organize trained models and results
   
 ### Step 3: Train and Inference
