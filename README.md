@@ -16,7 +16,7 @@ This repository contains all Python code for denoising tasks. An ImageJ/Fiji plu
 Clone the repository and install required packages:
 ```
 conda env create -f enviroment.yml
-conda env remove -n Denoising
+conda env activate Denoising
 pip install -r requirements.txt
 ```
 ### Step 1: Prepare Your Dataset
