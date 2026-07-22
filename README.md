@@ -53,7 +53,7 @@ python Inference_guidance.py
 ```
 We highly recommend selecting the optimal results by considering both the score and visual assessment.
 
-![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Mito.png)
+![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Results.png)
 
 ## 🛠️ ImageJ/Fiji Plugin: STRIDE
 
