@@ -1,9 +1,8 @@
 # STRIDE
-A universal self-supervised denoiser for optical microscopy.
+A generally applicable self-supervised denoiser for optical microscopy.
 
 ## 📄 Paper:
 The paper is under review.
-
 
 
 ## 📘 Introduction:
@@ -16,13 +15,13 @@ This repository contains all Python code for denoising tasks. An ImageJ/Fiji plu
 ### Installation
 Clone the repository and install required packages:
 ```
-git clone git@github.com:ZhangJD-ong/STRIDE.git
-cd STRIDE
+conda env create -f enviroment.yml
+conda env remove -n Denoising
 pip install -r requirements.txt
 ```
 ### Step 1: Prepare Your Dataset
 * Place your noisy 3D image stack in the Data folder (at least 16 z/t frames are required)
-* We've provided a sample noisy image of a mouse brain in the Data folder (Image size: 81(z) × 256(y) × 256(x))
+* We've provided a sample noisy image in the Data folder (Image size: 500(t) × 512(y) × 512(x))
   
 ### Step 2: Configure Denoising Parameters
 Edit option.py to set appropriate parameters:
@@ -31,9 +30,13 @@ Edit option.py to set appropriate parameters:
 * Specify task_name to organize trained models and results
   
 ### Step 3: Train and Inference
-Run the following command to train the model and perform inference:
+Run the following command to train the model and perform inference with default settings:
 ```
-python main.py
+python train.py
+```
+Or you can change settings via:
+```
+python train.py --datapath .\data --task_name test --image_type xyt --iter_num 3
 ```
 Results will be saved at ./checkpoints/task_name/results
 
@@ -48,10 +51,7 @@ python test.py
 ## 🛠️ ImageJ/Fiji Plugin: STRIDE
 
 ### Install Required Python Packages
-The plugin requires a PyTorch environment with all necessary packages:
-```
-pip install -r requirements.txt
-```
+The plugin requires a PyTorch environment with all necessary dependencies, following the same installation procedure described above.
 Attention: Install the packages in the base enviroment!!!
 ### Install ImageJ/Fiji
 Download ImageJ/Fiji from the [official website](https://imagej.net/software/fiji/downloads)
