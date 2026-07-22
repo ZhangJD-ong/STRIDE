@@ -20,8 +20,8 @@ conda env activate Denoising
 pip install -r requirements.txt
 ```
 ### Step 1: Prepare Your Dataset
-* Place your noisy 3D image stack in the Data folder (at least 16 z/t frames are required)
-* We've provided a sample noisy image in the Data folder (Image size: 500(t) × 512(y) × 512(x))
+* Place your noisy 3D image stack in the ./python/data folder (at least 16 z/t frames are required)
+* We've provided a sample noisy image in the ./python/data folder (Image size: 40(t) × 512(y) × 512(x))
   
 ### Step 2: Configure Denoising Parameters
 Edit option.py to set appropriate parameters:
@@ -41,11 +41,18 @@ python train.py --datapath .\data --task_name test --image_type xyt --iter_num 3
 Results will be saved at ./checkpoints/task_name/results
 
 ### Step 4: Inference with Pre-trained Model (Optional)
-* Replace the old data with new data in the Data folder
+* Replace the old data with new data in the ./python/data folder
 * Run
 ```
 python test.py
 ```
+### Step 5: Select the optimal result (Optional)_
+Select the optimal results with the highest score by running:
+```
+python Inference_guidance.py
+```
+We highly recommend selecting the optimal results by considering both the score and visual assessment.
+
 ![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Mito.png)
 
 ## 🛠️ ImageJ/Fiji Plugin: STRIDE
