@@ -7,7 +7,7 @@ The paper is under review.
 
 ## 📘 Introduction:
 This repository contains all Python code for denoising tasks. An ImageJ/Fiji plugin is provided for convenience.
-![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework.png)
+![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Framework1.png)
 
 
 ## 💻 Setup
