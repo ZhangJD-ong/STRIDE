@@ -15,7 +15,7 @@ class BaseOptions():
         parser.add_argument('--iter_num', type=int, default=3, help="iterations in the inference stage")
 
         #Defaut parameter recommended
-        parser.add_argument("--epoch", type=int, default=1, help="number of training epochs")
+        parser.add_argument("--epoch", type=int, default=20, help="number of training epochs")
         parser.add_argument('--GPU', type=str, default='0', help="the index of GPU you will use for computation (e.g. '0', '0,1', '0,1,2')")
         parser.add_argument('--patch_x', type=int, default=128, help="patch size in x and y")
         parser.add_argument('--patch_t', type=int, default=16, help="patch size in z, at least 16,recommend [16, 32, 64]")
