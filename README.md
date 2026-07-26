@@ -24,7 +24,7 @@ pip install -r requirements.txt
 * We've provided a sample noisy image in the ./python/data folder (Image size: 40(t) × 512(y) × 512(x))
   
 ### Step 2: Configure Denoising Parameters
-Edit option.py to set appropriate parameters:
+Edit options.py to set appropriate parameters:
 * Update datapath to point to your data location
 * Set image_type to xyz for structural images or xyt for functional images
 * Specify task_name to organize trained models and results
@@ -38,7 +38,7 @@ Or you can change settings via:
 ```
 python train.py --datapath .\data --task_name test --image_type xyt --iter_num 3
 ```
-Results will be saved at ./checkpoints/task_name/results
+Results will be saved at ./checkpoints/task_name/result
 
 ### Step 4: Inference with Pre-trained Model (Optional)
 * Replace the old data with new data in the ./python/data folder
@@ -46,7 +46,7 @@ Results will be saved at ./checkpoints/task_name/results
 ```
 python test.py
 ```
-### Step 5: Select the optimal result (Optional)_
+### Step 5: Select the optimal result (Optional)
 Select the optimal results with the highest score by running:
 ```
 python Inference_guidance.py
