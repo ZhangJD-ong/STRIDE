@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
     L1_pixelwise = torch.nn.L1Loss()
     L2_pixelwise = torch.nn.MSELoss()
-    p_max = math.log2(np.min((opt.patch_t,64)))
+    p_max = int(math.log2(np.min((opt.patch_t,64))))
 
     model = ResUnet3D(f_maps = [16,32,64]).to(device)
 
