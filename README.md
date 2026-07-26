@@ -32,11 +32,18 @@ Edit options.py to set appropriate parameters:
 ### Step 3: Train and Inference
 Run the following command to train the model and perform inference with default settings:
 ```
+cd python
 python train.py
 ```
 Or you can change settings via:
 ```
-python train.py --datapath .\data --task_name test --image_type xyt --iter_num 3
+cd python
+python train.py \
+  --datapath ./data \
+  --task_name Demo_Calcium \
+  --image_type xyt \
+  --epoch 20 \
+  --iter_num 3
 ```
 Results will be saved at ./checkpoints/task_name/result
 
