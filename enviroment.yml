@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8.20=he870216_0
+  - python=3.8.20
   - pip:
       - absl-py==2.3.1
       - certifi==2026.4.22
