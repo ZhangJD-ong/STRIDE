@@ -38,12 +38,7 @@ python train.py
 Or you can change settings via:
 ```
 cd python
-python train.py \
-  --datapath ./data \
-  --task_name Demo_Calcium \
-  --image_type xyt \
-  --epoch 20 \
-  --iter_num 3
+python train.py --datapath ./data --task_name Demo_Calcium --image_type xyt --epoch 20 --iter_num 3
 ```
 Results will be saved at ./checkpoints/task_name/result
 
