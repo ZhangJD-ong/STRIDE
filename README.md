@@ -17,8 +17,13 @@ Clone the repository and install required packages:
 ```
 conda env create -f enviroment.yml
 conda env activate Denoising
-pip install -r requirements.txt
 ```
+Install Pytorch with the version compatible with your OS and platform from [https://pytorch.org/](https://pytorch.org/get-started/previous-versions/)
+For example:
+```
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
 ### Step 1: Prepare Your Dataset
 * Place your noisy 3D image stack in the ./python/data folder (at least 16 z/t frames are required)
 * We've provided a sample noisy image in the ./python/data folder (Image size: 40(t) × 512(y) × 512(x))
