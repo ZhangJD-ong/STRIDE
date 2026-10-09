@@ -1,15 +1,107 @@
 name: Denoising
 channels:
-  - anaconda
-  - conda-forge
   - defaults
+  - anaconda
+  - nvidia
+  - conda-forge
+  - pytorch
 dependencies:
+  - blas=1.0=mkl
+  - brotlicffi=1.2.0.1=py311hd7fb8db_0
+  - bzip2=1.0.8=h2bbff1b_6
+  - ca-certificates=2026.9.25=haa95532_0
+  - charset-normalizer=3.4.7=py311haa95532_0
+  - cuda-cccl=13.3.3.4.1=hc09e98e_0
+  - cuda-cccl_win-64=13.3.3.4.1=hc667259_0
+  - cuda-cudart=11.7.99=0
+  - cuda-cudart-dev=11.7.99=0
+  - cuda-cupti=11.7.101=0
+  - cuda-libraries=11.7.1=0
+  - cuda-libraries-dev=11.7.1=0
+  - cuda-nvrtc=11.7.99=0
+  - cuda-nvrtc-dev=11.7.99=0
+  - cuda-nvtx=11.7.91=0
+  - cuda-runtime=11.7.1=0
+  - cuda-version=13.3=hcbadf70_4
+  - expat=2.9.0=hd7fb8db_0
+  - filelock=3.29.4=py311haa95532_1
+  - freetype=2.14.1=hfbffc0b_0
+  - gmp=6.3.0=he664a35_1
+  - gmpy2=2.3.1=py311h922e254_0
+  - intel-openmp=2023.1.0=h57928b3_46319
+  - jinja2=3.1.6=py311haa95532_1
+  - jpeg=9f=h89d5625_1
+  - lcms2=2.16=hb4a4139_0
+  - lerc=3.0=hd77b12b_0
+  - libblas=3.9.0=1_h8933c1f_netlib
+  - libcblas=3.9.0=16_hc41557d_netlib
+  - libcublas=11.10.3.66=0
+  - libcublas-dev=11.10.3.66=0
+  - libcufft=10.7.2.124=0
+  - libcufft-dev=10.7.2.124=0
+  - libcurand=10.4.3.29=hd7d98ca_0
+  - libcurand-dev=10.4.3.29=hd7d98ca_0
+  - libcusolver=11.4.0.1=0
+  - libcusolver-dev=11.4.0.1=0
+  - libcusparse=11.7.4.91=0
+  - libcusparse-dev=11.7.4.91=0
+  - libdeflate=1.17=h2bbff1b_1
+  - libexpat=2.9.0=hd7fb8db_0
+  - libffi=3.4.8=h42d73b9_3
+  - libhwloc=2.12.1=default_hfa10c62_1000
+  - libiconv=1.18=hc89ec93_0
+  - liblapack=3.9.0=16_h018ca30_netlib
+  - libnpp=11.7.4.75=0
+  - libnpp-dev=11.7.4.75=0
+  - libnvjpeg=11.8.0.2=0
+  - libnvjpeg-dev=11.8.0.2=0
+  - libpng=1.6.54=ha15c746_0
+  - libsqlite=3.53.4=hf5d6505_103
+  - libtiff=4.5.1=hd77b12b_0
+  - libuv=1.52.1=hd0d7782_0
+  - libwebp-base=1.6.0=hbf3958f_0
+  - libxml2=2.13.9=h6201b9f_0
+  - libzlib=1.2.13=h2466b09_6
+  - llvm-openmp=22.1.2=h6bd78e3_1
+  - lz4-c=1.9.4=h1c6eee0_5
+  - m2w64-gcc-libgfortran=5.3.0=6
+  - m2w64-gcc-libs=5.3.0=7
+  - m2w64-gcc-libs-core=5.3.0=7
+  - m2w64-gmp=6.1.0=2
+  - m2w64-libwinpthread-git=5.0.0.4634.697f757=2
+  - mkl=2023.1.0=h6a75c08_48682
+  - mkl-service=2.4.0=py311h827c3e9_2
+  - mpc=1.3.1=h827c3e9_0
+  - mpfr=4.2.1=haf916eb_1
+  - mpmath=1.3.0=py311haa95532_0
+  - msys2-conda-epoch=20160418=1
+  - numpy=1.24.4=py311h0b4df5a_0
+  - openjpeg=2.5.2=hae555c5_0
+  - openssl
+  - pip=26.2.1=pyhc872135_0
+  - pysocks=1.7.1=py311haa95532_2
   - python=3.11.0
+  - python_abi=3.11
+  - setuptools=84.0.0=py311haa95532_0
+  - sqlite=3.53.4=hee5a0db_0
+  - sympy=1.14.0=py311haa95532_1
+  - tbb=2021.13.0=hd094cb3_4
+  - tbb-devel=2021.13.0=h4eb897c_4
+  - tk=8.6.15=hf199647_0
+  - typing_extensions=4.16.0=py311haa95532_0
+  - ucrt=10.0.22621.0=haa95532_0
+  - vc=14.3=h2df5915_12
+  - vc14_runtime=14.44.35208=h4927774_12
+  - vs2015_runtime=14.44.35208=ha6b5a95_12
+  - wheel=0.47.0=py311haa95532_0
+  - win_inet_pton=1.1.0=py311haa95532_1
+  - xz
+  - zlib=1.2.13=h2466b09_6
+  - zstd=1.5.6=h8880b57_0
   - pip:
       - absl-py==2.3.1
       - certifi==2026.4.22
-      - cffi==1.17.1
-      - charset-normalizer==3.4.7
+      - cffi==2.0.0
       - cryptography==47.0.0
       - einops==0.8.1
       - google-auth==2.50.0
@@ -22,7 +114,6 @@ dependencies:
       - markdown==3.7
       - markupsafe==2.1.5
       - networkx==3.1
-      - numpy==1.24.4
       - oauthlib==3.3.1
       - packaging==26.2
       - pandas==2.0.3
@@ -42,6 +133,8 @@ dependencies:
       - tensorboard==2.14.0
       - tensorboard-data-server==0.7.2
       - tifffile==2023.7.10
+      - torchaudio==2.0.2
+      - torchvision==0.15.2
       - typing-extensions==4.13.2
       - tzdata==2026.2
       - urllib3==2.2.3
