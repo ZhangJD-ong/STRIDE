@@ -56,8 +56,9 @@ python test.py
 ## 🛠️ ImageJ/Fiji Plugin: STRIDE
 
 ### Install Required Python Packages
-The plugin requires a PyTorch environment with all necessary dependencies, following the same installation procedure described above.
-Attention: Install the packages in the base enviroment!!!
+The plugin requires a Python environment with PyTorch and all necessary dependencies installed. Please follow the installation procedure described above. 
+Attention: If these dependencies are installed in a separate environment rather than the base environment, replace python on line 44 of Denoising_STRIDE.py with the full path to the Python interpreter in the desired environment.
+
 ### Install ImageJ/Fiji
 Download ImageJ/Fiji from the [official website](https://imagej.net/software/fiji/downloads)
 
