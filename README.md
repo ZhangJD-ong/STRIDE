@@ -52,14 +52,6 @@ Results will be saved at ./checkpoints/task_name/result
 ```
 python test.py
 ```
-### Step 5: Select the optimal result (Optional)
-Select the optimal results with the highest score by running:
-```
-python Inference_guidance.py
-```
-We highly recommend selecting the optimal results by considering both the score and visual assessment.
-
-![image](https://github.com/ZhangJD-ong/STRIDE/blob/main/Img/Results.png)
 
 ## 🛠️ ImageJ/Fiji Plugin: STRIDE
 
