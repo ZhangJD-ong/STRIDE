@@ -25,7 +25,7 @@ class BaseOptions():
         parser.add_argument('--overlap_factor', type=float, default=0.5, help="the overlap factor between two adjacent patches")
         parser.add_argument('--batch_size', type=int, default=1, help='input train batch size')
         parser.add_argument('--lr', type=float, default=0.0001, help='initial learning rate')
-        parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='models are saved here')
+        parser.add_argument('--checkpoints_dir', type=str, default='./plugins/STRIDE/checkpoints', help='models are saved here')
         parser.add_argument('--num_threads', default=0, type=int, help='# threads for loading data')
         parser.add_argument('--scale_factor', type=int, default=1, help='the factor for image intensity scaling')
         parser.add_argument('--model_save_fre', type=int, default=10, help='frequency of saving model')
