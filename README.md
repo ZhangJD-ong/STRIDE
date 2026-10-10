@@ -16,7 +16,7 @@ This repository contains all Python code for denoising tasks. An ImageJ/Fiji plu
 Clone the repository and install required packages:
 ```
 conda env create -f enviroment.yml
-conda env activate Denoising
+conda activate Denoising
 ```
 Install Pytorch with the version compatible with your OS and platform from [https://pytorch.org/](https://pytorch.org/get-started/previous-versions/)
 ```
