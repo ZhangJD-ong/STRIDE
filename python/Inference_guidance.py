@@ -8,11 +8,20 @@ def max_min_found(img):
     min_img = np.min(img)
     return max_img, min_img
 
-def Outlier_removal(img, percentage = 0.05):
-    ref_max, ref_min = max_min_found(img)
-    f1 = np.where(img > (1 - percentage) * ref_max)
-    img[f1] = (1 - percentage) * ref_max
-    norm_img = (img - ref_min) / ((1 - percentage) * ref_max - ref_min)
+def Saturation_Renorm(img, percentage=0.05):
+    img = np.asarray(img, dtype=np.float32).copy()
+
+    ref_max = np.max(img)
+    ref_min = np.min(img)
+    upper_bound = (1 - percentage) * ref_max
+
+    denominator = upper_bound - ref_min
+    if denominator <= 0:
+        return np.zeros_like(img, dtype=np.float32)
+
+    clipped_img = np.clip(img, ref_min, upper_bound)
+    norm_img = (clipped_img - ref_min) / denominator
+
     return norm_img
 
 def calculate_snr(image, reference_image):
@@ -27,8 +36,8 @@ def SNR_metric(img, reference, group_size = 51):
     snr, slice = 0, 0
     for i in range(t-group_size+1):
         if np.mean(img[i+group_size//2,:,:]) > 0 and np.mean(np.mean(reference[i:i+group_size,:,:],axis=0)) > 0:
-            img_s = Outlier_removal(img[i+group_size//2,:,:], percentage = 0.05)
-            ref_s = Outlier_removal(np.mean(reference[i:i+group_size,:,:],axis=0), percentage = 0.05)
+            img_s = Saturation_Renorm(img[i+group_size//2,:,:], percentage = 0.05)
+            ref_s = Saturation_Renorm(np.mean(reference[i:i+group_size,:,:],axis=0), percentage = 0.05)
             snr += calculate_snr(img_s,ref_s)
         slice += 1
     return snr/slice
